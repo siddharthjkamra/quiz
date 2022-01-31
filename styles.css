@@ -87,7 +87,7 @@ overflow: auto;
 
 /* Form */
 
-label, input[type="text"], input[type="tel"], input[type="date"], input[type="file"], input[type="button"], select, textarea {
+label, input[type="text"], input[type="tel"], input[type="date"], input[type="file"], input[type="submit"], select, textarea {
 				width: 80%;
 				padding: 5px;
 				font-size: 20px;
@@ -106,7 +106,7 @@ select, input[type="date"] {
 				background-color: #ffffff;
 }
 
-input[type="button"] {
+input[type="submit"] {
 				background-color: tomato;
 				color: white;
 				padding: 10px;
@@ -117,7 +117,7 @@ input[type="button"] {
 				border: none;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
 				background: tomato;
 				box-shadow: 0 5px black;
 }
