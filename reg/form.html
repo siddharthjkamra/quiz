@@ -14,17 +14,17 @@
 <h2>Application Form</h2>
 <form>
 <label>Transaction ID</label><br>
-<input type="text" id="payID"><br>
+<input type="text" id="payID" required><br>
 <label>Full Name</label><br>
-<input type="text" id="name"><br>
+<input type="text" id="name" required><br>
 <label>Father's Name</label><br>
-<input type="text" id="fname"><br>
+<input type="text" id="fname" required><br>
 <label>Mother's Name</label><br>
-<input type="text" id="mname"><br>
+<input type="text" id="mname" required><br>
 <label>Date of Birth</label><br>
-<input type="date" min="2001-01-01" max="2012-12-31" value="2005-06-15" id="dob"><br>
+<input type="date" min="2001-01-01" max="2012-12-31" value="2005-06-15" id="dob" required><br>
 <label>Standard</label><br>
-<select>
+<select required>
 <option>6th</option>
 <option>7th</option>
 <option>8th</option>
@@ -32,16 +32,16 @@
 <option>10th</option>
 </select><br>
 <label>School Name</label><br>
-<input type="text" id="schoolname"><br>
+<input type="text" id="schoolname" required><br>
 <label>Mobile Number</label><br>
-<input type="tel" id="mobile" maxlength="10"><br>
+<input type="tel" id="mobile" maxlength="10" required><br>
 <label>Address</label><br>
-<textarea name="address" rows="5" id="address"></textarea><br>
+<textarea name="address" rows="5" id="address" required></textarea><br>
 
     <div id="img-preview"></div>    
 <label for="file-upload" class="custom-file-upload">
 <i class="fa fa-cloud-upload"></i> Upload Photo</label>
-<input id="file-upload" accept="image/*" type="file" id="file-upload"/>
+<input id="file-upload" accept="image/*" type="file" id="file-upload" required/>
 <br>
 <input type="checkbox" id="agree" checked required> I agree Terms and Conditions<br>
 <input type="submit" value="Submit">
