@@ -168,7 +168,10 @@ input[type="file"] {
 }
 
 @media(min-width: 600px){
-				label, input[type="text"], input[type="tel"], input[type="date"], input[type="file"], input[type="submit"], select, textarea {
+				label, input[type="text"], input[type="tel"], input[type="date"], input[type="file"], input[type="submit"], select, textarea, h2{
 								font-size: 40px;
 				}
+h3 {
+												font-size: 35px;
+								}
 }
