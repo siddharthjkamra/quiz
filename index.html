@@ -1,35 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
+    <title>Quiz Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- this is an example from the MDN Layout Cookbook -->
-    <title>Kamra Competition</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+    </script>
 </head>
 <body>
-    <section>
-        <div class="wrapper">
-            <header class="page-header"><img src="files/logo.png"></header>
-            <main class="page-body">
-<img src="files/quiz.jpg" width="80%" alt=""></img>
-<ul>
-<li onclick="location.href='reg/fee';">Fee Payment</li>
-<li onclick="location.href='https://cognitoforms.com/Sidforms/VivekanandGKExam';">Application Form</li>
-<li onclick="location.href='reg/print';">Print</li>
-</ul>
-<br>
-<div class="dates">
-<b>Important Dates</b><br>
-Begins: February 27, 2022<br>
-Ends: March 27, 2022<br>
-<br>
-<b>Notes</b><br>
-Notes will be here
+<div class="navbar">
+    <div id="nav">
+        <a href="page1.html">Home</a>
+        <a href="page2.html">Fee Payment</a>
+        <a href="page3.html">Application Form</a>
+        <a href="page4.html">Print</a>
+    </div>
 </div>
-            </main>
-            <footer class="page-footer">© Kamra Competition - All rights reserved</footer>
-        </div>
-    </section>
+
+    <div id="content">
+     <img src="/files/quiz.jpg" width="100%"/>
+    </div>
+<div class="page-footer">Quiz Registration</div>
 </body>
 </html>
